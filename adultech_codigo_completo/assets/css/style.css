@@ -1,0 +1,111 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fdfaf6;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #2b2d42;
+  font-size: 1.2rem;
+}
+
+header {
+  background-color: #274c77;
+  color: #ffffff;
+  padding: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  position: relative;
+}
+
+.bola {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 60px;
+  height: 60px;
+}
+
+.container {
+  padding: 2rem 1rem;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 420px;
+  margin: 2rem auto;
+}
+
+button {
+  background-color: #547ca0;
+  border: none;
+  color: #ffffff;
+  padding: 1.8rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border-radius: 16px;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+@media (hover: hover) {
+  button:hover {
+    transform: scale(1.05);
+    background-color: #3e5d7a;
+  }
+}
+
+.section {
+  margin-top: 2.5rem;
+  font-size: 1.4rem;
+  line-height: 1.8;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
+  border-left: 6px solid #6096ba;
+  padding: 1.2rem;
+  border-radius: 10px;
+}
+
+.accessibility {
+  margin-top: 2rem;
+}
+
+.accessibility button {
+  background-color: #f4d35e;
+  color: #000;
+}
+.bola {
+  width: 80px;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 16px;
+}
+.illustration,
+#instructionImage {
+  margin-top: 2rem;
+}
+
+.illustration img,
+#instructionImage img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+/* Modo accesible: letra más grande */
+.large-font {
+  font-size: 1.6rem;
+}
+
+.large-font .section,
+.large-font .illustration,
+.large-font .button-grid button {
+  font-size: 1.8rem;
+}

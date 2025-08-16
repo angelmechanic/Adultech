@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AdulTech</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <meta name="theme-color" content="#274c77">
+</head>
+<body>
+  <header>
+    <img src="assets/img/bola.png" alt="Gato Bola guía" class="bola">
+    <h1>AdulTech</h1>
+  </header>
+
+  <div class="container">
+    <div class="button-grid">
+      <button onclick="showInstructions('whatsapp')">📱 Aprender a enviar un mensaje por WhatsApp</button>
+      <button onclick="showInstructions('gmail')">📧 Aprender a leer un correo en Gmail</button>
+      <button onclick="showInstructions('llamada')">📞 Aprender a hacer una llamada</button>
+    </div>
+
+    <div class="accessibility">
+      <button id="btnLetra" onclick="toggleFontSize()" aria-label="Aumentar tamaño de letra">🔠 Aumentar letra</button>
+      <button id="btnNarrar" onclick="speakCurrent()" aria-label="Narrar el texto en pantalla">🔊 Narrar</button>
+    </div>
+
+    <div class="section" id="instructionText" aria-live="polite">
+      Presione alguno de los botones grandes de arriba para comenzar. Verá imágenes y explicaciones simples.
+    </div>
+
+    <div class="illustration" id="instructionImage" role="img" aria-label="Ilustración del paso actual"></div>
+  </div>
+
+  <script src="assets/js/script.js" defer></script>
+</body>
+</html>
